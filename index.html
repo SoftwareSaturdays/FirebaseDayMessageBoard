@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<title>Firebase Day Message Board</title>
+
+		<link rel = "stylesheet" type = "text/css" href = "index.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Firebase Day Message Board</h1>
+			<!-- <button id="addMessage">Add Message</button> -->
+		</header>
+
+		<div id="messages"></div>
+				
+		<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyAdGhoppk-oBc8m7LnGnE8SriIAwjsPUQQ",
+				authDomain: "spring-android-firebase-day.firebaseapp.com",
+				databaseURL: "https://spring-android-firebase-day.firebaseio.com",
+				projectId: "spring-android-firebase-day",
+				storageBucket: "spring-android-firebase-day.appspot.com",
+				messagingSenderId: "747480959256"
+			};
+			firebase.initializeApp(config);
+		</script>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
